@@ -8,9 +8,10 @@ public class LongestUniqueSubString {
         Set<Character> charSet = new HashSet<>();
         int left = 0, maxLength = 0, startIndex = 0;
         String longestSubString = "";
-
+        //right moves forward to detect the duplicates....
         for(int right = 0; right < str.length(); right++){
-            if(charSet.contains(str.charAt(right))){
+            //if the duplicate is found we remove from the left until the duplicate is removed.
+            while(charSet.contains(str.charAt(right))){
                 charSet.remove(str.charAt(right));
                 left++;
             }
