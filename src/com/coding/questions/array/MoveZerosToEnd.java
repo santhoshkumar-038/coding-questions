@@ -5,7 +5,8 @@ public class MoveZerosToEnd {
         int nonZeroIndex = 0;
         //we are using nonZeroIndex in such a way that, it stops at zero, when current element
         //is a zero, we are not entering into if block, then nonZeroIndex stops at zero, current i
-        // it is equal to it, then we are swaping.
+        // it is equal to it, then we are swapping.
+        //1, 2, 0, 4, 0, 5
         for(int i=0; i<arr.length; i++){
             if(arr[i] != 0){
                 if(i!=nonZeroIndex){
