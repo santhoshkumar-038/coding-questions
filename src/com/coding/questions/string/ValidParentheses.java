@@ -8,14 +8,14 @@ public class ValidParentheses {
         char[] charArr = str.toCharArray();
 
         for(char ch: charArr){
-            if(ch == '(' || ch == ']' || ch == '{'){
+            if(ch == '(' || ch == '[' || ch == '{'){
                 stack.add(ch);
             }else {
                 if(stack.isEmpty()){
                     return false;
                 }
                 char top = stack.pop();
-                if(ch == '(' && top != ')' || ch == '[' && ch == ']' || ch == '{' && ch == '}'){
+                if(ch == ')' && top != '(' || ch == ']' && top != '[' || ch == '}' && top != '{'){
                     return false;
                 }
             }
