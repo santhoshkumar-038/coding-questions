@@ -1,7 +1,6 @@
 package com.coding.questions.string;
 
 //Aim:- Write a Java program to find the longest contiguous substring of digits in a given alphanumeric string.
-//Aim:- Write a Java program to find the longest contiguous substring of digits in a given alphanumeric string.
 
 //We need to scan through the string and:
 //

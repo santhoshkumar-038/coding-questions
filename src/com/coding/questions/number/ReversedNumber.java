@@ -1,7 +1,7 @@
 package com.coding.questions.number;
 
 //Reverse an Integer Without Using String
-public class ReverseNumber {
+public class ReversedNumber {
     public int reverseNumber(int num){
         if(num < 0){
             return -1;
